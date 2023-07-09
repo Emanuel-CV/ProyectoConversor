@@ -15,6 +15,11 @@ public class Main {
 			} catch (NumberFormatException nf) {
 				JOptionPane.showMessageDialog(null, "Solo se permiten valos numéricos.");
 			}
+			
+			if (continuar == 1 || continuar == 2) {
+				JOptionPane.showMessageDialog(null, "Programa terminado");
+			}
+				
 		}
 	}
 }
