@@ -1,5 +1,4 @@
 package proyectoConversor;
-
 import javax.swing.JOptionPane;
 
 public class Monedas {
@@ -21,7 +20,6 @@ public class Monedas {
 	
 	private double valorCopToKrw = 0.315341;
 	private double valorKrwToCop = 3.1709372;
-	
 	
 	public void PesoToUsd() {
 		this.valor = Double.parseDouble(JOptionPane
