@@ -37,10 +37,11 @@ public class Temperatura {
 	}
 	
 	public void FahrenheitToKelvin() {
+		DecimalFormat df = new DecimalFormat("#.00");
 		this.valorTemperatura = Double.parseDouble(JOptionPane
 				.showInputDialog("Ingresa la cantidad de Grados F° que deseas convertir a K°"));
 		this.valorConversion = (double) ((double) this.valorTemperatura + 459.67) * 5/9;
-		JOptionPane.showMessageDialog(null, this.valorConversion.toString().replace(",", ".") + " K°");
+		JOptionPane.showMessageDialog(null, decimal.format(this.valorConversion).replace(",", ".") + " K°");
 	}
 	
 	public void KelvinToCelsius() {
